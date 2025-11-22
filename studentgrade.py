@@ -4,7 +4,7 @@ marks3 = float(input("Enter marks of subject 3: "))
 marks4 = float(input("Enter marks of subject 4: "))
 marks5 = float(input("Enter marks of subject 5: "))
 
-avg = (marks1 + marks2 + marks3) / 3
+avg = (marks1 + marks2 + marks3 + marks4 + marks5) / 5
 
 if avg >= 85:
     grade = "A"
@@ -14,8 +14,11 @@ elif avg >= 55:
     grade = "C"
 elif avg >= 40:
     grade = "D"
+elif avg >= 30:   
+    grade = "E"
 else:
     grade = "Fail"
 
+print("\n--- Result ---")
 print("Average Marks:", avg)
 print("Grade:", grade)
